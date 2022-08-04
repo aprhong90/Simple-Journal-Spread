@@ -3,6 +3,7 @@ import React, { useRef } from "react";
 import { Editor } from "@tinymce/tinymce-react";
 import { Editor as TinyMCEEditor } from "tinymce";
 
+//TODO: MAKE PROP FOR CREATE AND EDIT
 const key: string = process.env.REACT_APP_TINYMCE_KEY || "";
 
 export default function TextEdittingForm() {
@@ -15,7 +16,7 @@ export default function TextEdittingForm() {
 
   return (
     <form>
-      <input type="text" placeholder="Ttile" />
+      <input type="text" placeholder="Title" />
       <Editor
         apiKey={key}
         onInit={(evt, editor) => (editorRef.current = editor)}

@@ -6,7 +6,7 @@ import {
   Routes,
 } from "react-router-dom";
 import "./App.css";
-import CreatePage from "./components/CreatePage";
+import PostPage from "./components/PostPage";
 import Header from "./components/Header";
 import HomePage from "./components/HomePage";
 import ListPage from "./components/ListPage";
@@ -23,7 +23,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/journal" element={<MainPage />} />
-          <Route path="/create" element={<CreatePage />} />
+          <Route path="/post/:id" element={<PostPage />} />
           <Route path="/list" element={<ListPage />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>

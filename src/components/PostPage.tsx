@@ -1,15 +1,18 @@
-import "./CreatePage.css";
+import "./PostPage.css";
 import StickersForm from "./StickersForm";
 import TextEdittingForm from "./TextEdittingForm";
 
-const CreatePage = () => {
+//TODO: make prop for the value.
+//CREATE OR EDIT
+const PostPage = () => {
   return (
-    <div className="CreatePage">
+    <div className="PostPage">
       <div>Create</div>
+      <div>Edit</div>
       <TextEdittingForm />
       <StickersForm />
     </div>
   );
 };
 
-export default CreatePage;
+export default PostPage;
